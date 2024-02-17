@@ -4,8 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus-Ticket-Landing Page</title>
-</head>
-<body>
     
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .raleway-font{
+        font-family: "Raleway", sans-serif;
+        
+    }
+    .inter-font{
+        font-family: "Inter", sans-serif;
+    }
+    </style>
+
+</head>
+<body class="raleway-font">
+    <header >
+        <!-- navbar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#030712B3]">
+                  <li class="text-xl font-medium"><a>Home</a></li>
+                  <li class="text-xl font-medium"><a>About</a></li>
+                  <li class="text-xl font-medium"><a>Destination</a></li>
+                  <li class="text-xl font-medium"><a>Search</a></li>
+
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl font-extrabold text-[#030712]">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[#030712B3]">
+                <li class="text-xl font-medium"><a>Home</a></li>
+                <li class="text-xl font-medium"><a>About</a></li>
+                <li class="text-xl font-medium"><a>Destination</a></li>
+                <li class="text-xl font-medium"><a>Search</a></li>
+
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold text-xl">Bus <img src="icons/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+          <!-- banner section -->
+          <div class="hero min-h-screen mt-12" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-6xl font-extrabold">End-to-End Travel with <br> P Paribahan</h1>
+                <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+                <button class="btn btn-primary bg-[#1DD100] text-black text-xl font-bold border-none">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <!-- Best offer section -->
+        <section class="mt-28 inter-font">
+            <p class="font-bold text-4xl text-center">Best offers for you</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 ml-14 mt-14">
+                <div class="card w-11/12 h-48 bg-[#FFBF0F] text-black bg-no-repeat bg-center mb-8" style="background-image: url(images/cupon-devider.png);">
+                    <div class="flex">
+                        <div class="card-body">
+                            <h2 class="card-title text-4xl font-extrabold">15% OFF</h2>
+                            <p class="text-lg font-semibold">on your next purchase</p>
+                            <p class="text-lg font-medium">
+                              use by January 2024</p>
+                          </div>
+                          <div class="text-center mr-12 md:mr-16 mt-14">
+                            <p class="font-bold text-3xl">NEW15</p>
+                            <p class="font-medium text-xl">Coupon Code</p>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="card w-11/12 h-48 bg-[#F78C9C] text-black bg-no-repeat bg-center" style="background-image: url(images/cupon-devider.png);">
+                   <div class="flex">
+                    <div class="card-body">
+                        <h2 class="card-title text-4xl font-extrabold">20% OFF</h2>
+                        <p class="text-lg font-semibold">on your next purchase</p>
+                        <p class="text-lg font-medium">use by January 2024</p>
+                      </div>
+                      <div>
+                        <div class="text-center mr-12 md:mr-16 mt-14">
+                            <p class="font-bold text-3xl">Couple 20</p>
+                            <p class="font-medium text-xl">Coupon Code</p>
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+            </div>
+            <div class="flex justify-center mt-20">
+                <a class="btn bg-[#FFFFFF] border-solid border-[#1DD100] text-[#1DD100] font-bold text-xl">See All Offers</a>
+              </div>
+        </section>
+        <!-- ph section -->
+        <section>
+            <div class="text-center mt-28">
+                <p class="font-bold text-4xl">P.H Paribahan</p>
+                <p class="mt-6">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+
+            </div>
+            <div>
+                <div>
+                    
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
