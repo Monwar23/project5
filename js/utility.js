@@ -15,22 +15,23 @@ for (const btn of allBtn) {
             totalCost('total-cost')
             totalCost('grand-total')
             enableNextButton();
-
+            const selectContainer = document.getElementById(
+                "seat-details"
+              );
+              const p11 = document.createElement("p")
+              p11.innerText = btn.innerText
+              const p22=document.createElement('p')
+              p22.innerText='Economy'
+              const p33 = document.createElement("p")
+              p33.innerText = '550'
+                
+              selectContainer.appendChild(p11)
+              selectContainer.appendChild(p22)
+              selectContainer.appendChild(p33)
+             
         }
-        btn.disabled=true
-        const selectContainer = document.getElementById(
-            "seat-details"
-          );
-          const p11 = document.createElement("p");
-          p11.innerText = btn.innerText;
-          const p22=document.createElement('p')
-          p22.innerText='Economy'
-          const p33 = document.createElement("p");
-          p33.innerText = '550';
-      
-          selectContainer.appendChild(p11)
-          selectContainer.appendChild(p22)
-          selectContainer.appendChild(p33)
+        
+        
     })
 }
 
@@ -38,6 +39,7 @@ function ticketInfo(elementId, soldTicket) {
     const element = document.getElementById(elementId)
     const elementValueText = element.innerText
     const value = parseInt(elementValueText)
+
     element.innerText = value - 1
     const element1 = document.getElementById(soldTicket)
     const elementValue = element1.innerText
@@ -89,8 +91,8 @@ function applyDiscount(discountPercentage) {
       const p2 = document.createElement("p")
       p2.innerText = discountAmount
   
-      selectedContainer.appendChild(p);
-      selectedContainer.appendChild(p2);
+      selectedContainer.appendChild(p)
+      selectedContainer.appendChild(p2)
 
    
 }
