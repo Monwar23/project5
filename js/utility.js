@@ -28,7 +28,7 @@ for (const btn of allBtn) {
               selectContainer.appendChild(p11)
               selectContainer.appendChild(p22)
               selectContainer.appendChild(p33)
-             
+              btn.disabled=true
         }
         
         
